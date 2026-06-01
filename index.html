@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Microbook – Conserto de Computadores e Notebooks</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- =========================================
+       NAVBAR
+  ========================================= -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
+        <span class="brand-icon"><i class="bi bi-cpu-fill"></i></span>
+        <span class="brand-text">Micro<span class="brand-accent">Book</span></span>
+      </a>
+
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNav" aria-controls="navbarNav"
+              aria-expanded="false" aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#diferenciais">Diferenciais</a></li>
+          <li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-accent btn-sm px-3" href="#contato">Fale Conosco</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- =========================================
+       HERO
+  ========================================= -->
+  <section class="hero-section d-flex align-items-center" id="inicio">
+    <div class="hero-overlay"></div>
+    <div class="container position-relative z-1">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-6" data-aos="fade-right">
+          <span class="badge-pill mb-3">
+            <i class="bi bi-shield-check-fill me-1"></i> Garantia em todos os serviços
+          </span>
+          <h1 class="display-4 fw-800 text-white lh-sm mb-4">
+            Seu computador<br>
+            <span class="text-accent">voltando à vida</span><br>
+            com rapidez.
+          </h1>
+          <p class="lead text-white-75 mb-5">
+            Especialistas em conserto de computadores e notebooks há mais de 10 anos.
+            Diagnóstico gratuito, atendimento ágil e garantia em todas as peças.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#servicos" class="btn btn-accent btn-lg px-4">
+              <i class="bi bi-tools me-2"></i>Ver Serviços
+            </a>
+            <a href="https://wa.me/5500000000000" target="_blank" rel="noopener"
+               class="btn btn-outline-light btn-lg px-4">
+              <i class="bi bi-whatsapp me-2"></i>WhatsApp
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center" data-aos="fade-left">
+          <div class="hero-illustration">
+            <i class="bi bi-laptop"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Ondas decorativas -->
+    <div class="hero-wave">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path fill="#f8f9fa" d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L0,120Z"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- =========================================
+       MÉTRICAS / NÚMEROS
+  ========================================= -->
+  <section class="metrics-section py-5 bg-light" id="numeros">
+    <div class="container">
+      <div class="row g-4 text-center justify-content-center">
+        <div class="col-6 col-md-3">
+          <div class="metric-card p-4">
+            <div class="metric-number" data-target="1500">0</div>
+            <div class="metric-label">Equipamentos consertados</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="metric-card p-4">
+            <div class="metric-number" data-target="10">0</div>
+            <div class="metric-label">Anos de experiência</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="metric-card p-4">
+            <div class="metric-number" data-target="98">0</div>
+            <div class="metric-label">% de satisfação</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="metric-card p-4">
+            <div class="metric-number" data-target="24">0</div>
+            <div class="metric-label">h prazo médio de entrega</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       SERVIÇOS
+  ========================================= -->
+  <section class="py-6" id="servicos">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <span class="section-tag">O que fazemos</span>
+        <h2 class="section-title">Nossos <span class="text-accent">Serviços</span></h2>
+        <p class="section-sub text-muted">
+          Do diagnóstico à entrega, resolvemos qualquer problema no seu equipamento.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="service-card h-100 p-4">
+            <div class="service-icon mb-3">
+              <i class="bi bi-motherboard-fill"></i>
+            </div>
+            <h5 class="fw-700 mb-2">Manutenção de Notebooks</h5>
+            <p class="text-muted mb-3">Troca de tela, teclado, bateria, cooler, pasta térmica, conector de carga e muito mais.</p>
+            <a href="#contato" class="service-link">Solicitar orçamento <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="service-card h-100 p-4">
+            <div class="service-icon mb-3">
+              <i class="bi bi-pc-display-horizontal"></i>
+            </div>
+            <h5 class="fw-700 mb-2">Conserto de Desktops</h5>
+            <p class="text-muted mb-3">Diagnóstico completo, troca de fonte, HD/SSD, memória RAM, placa de vídeo e placa-mãe.</p>
+            <a href="#contato" class="service-link">Solicitar orçamento <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="service-card service-card--featured h-100 p-4">
+            <div class="service-icon mb-3">
+              <i class="bi bi-search"></i>
+            </div>
+            <h5 class="fw-700 mb-2">Diagnóstico Gratuito</h5>
+            <p class="text-muted mb-3">Avaliamos o seu equipamento sem custo. Só pagamos se você aprovar o orçamento.</p>
+            <a href="#contato" class="service-link">Agendar diagnóstico <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="service-card h-100 p-4">
+            <div class="service-icon mb-3">
+              <i class="bi bi-shield-lock-fill"></i>
+            </div>
+            <h5 class="fw-700 mb-2">Formatação e Backup</h5>
+            <p class="text-muted mb-3">Formatação completa, instalação de sistema operacional e backup seguro dos seus dados.</p>
+            <a href="#contato" class="service-link">Solicitar orçamento <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="service-card h-100 p-4">
+            <div class="service-icon mb-3">
+              <i class="bi bi-hdd-fill"></i>
+            </div>
+            <h5 class="fw-700 mb-2">Upgrade de Hardware</h5>
+            <p class="text-muted mb-3">Modernize seu equipamento com SSD, mais memória RAM ou nova placa de vídeo por um preço justo.</p>
+            <a href="#contato" class="service-link">Solicitar orçamento <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="service-card h-100 p-4">
+            <div class="service-icon mb-3">
+              <i class="bi bi-wifi"></i>
+            </div>
+            <h5 class="fw-700 mb-2">Redes e Conectividade</h5>
+            <p class="text-muted mb-3">Configuração de redes Wi-Fi, cabeadas e VPN para uso doméstico ou empresarial.</p>
+            <a href="#contato" class="service-link">Solicitar orçamento <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       SOBRE
+  ========================================= -->
+  <section class="about-section py-6 bg-light" id="sobre">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-5 text-center">
+          <div class="about-illustration">
+            <i class="bi bi-tools"></i>
+            <div class="about-badge">
+              <i class="bi bi-patch-check-fill me-1"></i> Certificados
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <span class="section-tag">Quem somos</span>
+          <h2 class="section-title mb-3">
+            Sobre a <span class="text-accent">Microbook</span>
+          </h2>
+          <p class="text-muted mb-3">
+            A Microbook nasceu em 2014 com uma missão simples: devolver seus equipamentos a pleno funcionamento com
+            honestidade, rapidez e preço justo. Somos uma equipe de técnicos certificados apaixonados por tecnologia
+            e comprometidos com a satisfação de cada cliente.
+          </p>
+          <p class="text-muted mb-4">
+            Atendemos pessoas físicas e jurídicas, com retirada e entrega disponíveis na cidade. Cada serviço conta
+            com garantia de 90 dias em peças e mão de obra.
+          </p>
+          <div class="row g-3 mb-4">
+            <div class="col-sm-6">
+              <div class="about-feature">
+                <i class="bi bi-check-circle-fill text-accent me-2"></i>
+                Garantia de 90 dias
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="about-feature">
+                <i class="bi bi-check-circle-fill text-accent me-2"></i>
+                Técnicos certificados
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="about-feature">
+                <i class="bi bi-check-circle-fill text-accent me-2"></i>
+                Peças originais e homologadas
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="about-feature">
+                <i class="bi bi-check-circle-fill text-accent me-2"></i>
+                Orçamento sem surpresas
+              </div>
+            </div>
+          </div>
+          <a href="#contato" class="btn btn-primary-custom btn-lg px-4">
+            <i class="bi bi-chat-dots-fill me-2"></i>Entre em Contato
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       DIFERENCIAIS / PROCESSO
+  ========================================= -->
+  <section class="py-6" id="diferenciais">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <span class="section-tag">Por que nos escolher</span>
+        <h2 class="section-title">Como <span class="text-accent">funciona</span></h2>
+        <p class="section-sub text-muted">Um processo simples, transparente e sem complicações.</p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <div class="col-sm-6 col-lg-3">
+          <div class="process-card text-center p-4 h-100">
+            <div class="process-step">1</div>
+            <div class="process-icon"><i class="bi bi-box-seam-fill"></i></div>
+            <h6 class="fw-700 mt-3 mb-2">Traga seu equipamento</h6>
+            <p class="text-muted small">Venha até nossa loja ou solicite coleta em domicílio.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="process-card text-center p-4 h-100">
+            <div class="process-step">2</div>
+            <div class="process-icon"><i class="bi bi-clipboard2-pulse-fill"></i></div>
+            <h6 class="fw-700 mt-3 mb-2">Diagnóstico gratuito</h6>
+            <p class="text-muted small">Nossa equipe identifica todos os problemas e gera o orçamento.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="process-card text-center p-4 h-100">
+            <div class="process-step">3</div>
+            <div class="process-icon"><i class="bi bi-gear-wide-connected"></i></div>
+            <h6 class="fw-700 mt-3 mb-2">Conserto aprovado</h6>
+            <p class="text-muted small">Após aprovação, iniciamos o reparo com peças de qualidade.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="process-card text-center p-4 h-100">
+            <div class="process-step">4</div>
+            <div class="process-icon"><i class="bi bi-bag-check-fill"></i></div>
+            <h6 class="fw-700 mt-3 mb-2">Entrega e garantia</h6>
+            <p class="text-muted small">Equipamento testado, entregue e com 90 dias de garantia.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       DEPOIMENTOS
+  ========================================= -->
+  <section class="testimonials-section py-6 bg-light" id="depoimentos">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <span class="section-tag">Clientes satisfeitos</span>
+        <h2 class="section-title">O que dizem sobre <span class="text-accent">nós</span></h2>
+      </div>
+
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="row justify-content-center">
+              <div class="col-md-8 col-lg-6">
+                <div class="testimonial-card text-center p-5">
+                  <div class="stars mb-3">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <p class="testimonial-text mb-4">
+                    "Levei meu notebook com tela quebrada e em menos de 24h estava pronto. Serviço impecável
+                    e preço justo. Recomendo muito a Microbook!"
+                  </p>
+                  <div class="testimonial-author">
+                    <div class="author-avatar">AN</div>
+                    <div>
+                      <strong>Ana Nascimento</strong>
+                      <div class="text-muted small">Designer Gráfica</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-md-8 col-lg-6">
+                <div class="testimonial-card text-center p-5">
+                  <div class="stars mb-3">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <p class="testimonial-text mb-4">
+                    "Meu PC estava lentíssimo. Fizeram um upgrade de SSD por um ótimo preço e a diferença
+                    foi incrível! Atendimento muito profissional."
+                  </p>
+                  <div class="testimonial-author">
+                    <div class="author-avatar">CS</div>
+                    <div>
+                      <strong>Carlos Silva</strong>
+                      <div class="text-muted small">Empresário</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-md-8 col-lg-6">
+                <div class="testimonial-card text-center p-5">
+                  <div class="stars mb-3">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </div>
+                  <p class="testimonial-text mb-4">
+                    "Diagnóstico gratuito e orçamento honesto. Não cobram por serviços desnecessários.
+                    Já trouxe três equipamentos e sempre saí satisfeita!"
+                  </p>
+                  <div class="testimonial-author">
+                    <div class="author-avatar">MO</div>
+                    <div>
+                      <strong>Mariana Oliveira</strong>
+                      <div class="text-muted small">Professora universitária</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                data-bs-slide="prev">
+          <span class="carousel-arrow"><i class="bi bi-chevron-left"></i></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                data-bs-slide="next">
+          <span class="carousel-arrow"><i class="bi bi-chevron-right"></i></span>
+        </button>
+        <div class="carousel-indicators position-relative mt-4 justify-content-center gap-2">
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0"
+                  class="indicator active" aria-current="true"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
+                  class="indicator"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"
+                  class="indicator"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       CONTATO
+  ========================================= -->
+  <section class="py-6" id="contato">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <span class="section-tag">Fale conosco</span>
+        <h2 class="section-title">Entre em <span class="text-accent">Contato</span></h2>
+        <p class="section-sub text-muted">Preencha o formulário ou fale direto pelo WhatsApp.</p>
+      </div>
+
+      <div class="row g-5 align-items-start">
+        <!-- Informações de contato -->
+        <div class="col-lg-5">
+          <div class="contact-info">
+            <div class="contact-item d-flex align-items-start gap-3 mb-4">
+              <div class="contact-icon-wrap">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div>
+                <h6 class="fw-700 mb-1">Endereço</h6>
+                <p class="text-muted mb-0">Rua das Tecnologias, 123 – Centro<br>Sua Cidade – UF</p>
+              </div>
+            </div>
+            <div class="contact-item d-flex align-items-start gap-3 mb-4">
+              <div class="contact-icon-wrap">
+                <i class="bi bi-clock-fill"></i>
+              </div>
+              <div>
+                <h6 class="fw-700 mb-1">Horário de Funcionamento</h6>
+                <p class="text-muted mb-0">Seg – Sex: 08h às 18h<br>Sábado: 08h às 13h</p>
+              </div>
+            </div>
+            <div class="contact-item d-flex align-items-start gap-3 mb-4">
+              <div class="contact-icon-wrap">
+                <i class="bi bi-telephone-fill"></i>
+              </div>
+              <div>
+                <h6 class="fw-700 mb-1">Telefone / WhatsApp</h6>
+                <p class="text-muted mb-0">
+                  <a href="tel:+5500000000000" class="text-muted text-decoration-none">(00) 0000-0000</a><br>
+                  <a href="https://wa.me/5500000000000" target="_blank" rel="noopener" class="text-muted text-decoration-none">
+                    <i class="bi bi-whatsapp text-success me-1"></i>(00) 00000-0000
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="contact-item d-flex align-items-start gap-3">
+              <div class="contact-icon-wrap">
+                <i class="bi bi-envelope-fill"></i>
+              </div>
+              <div>
+                <h6 class="fw-700 mb-1">E-mail</h6>
+                <p class="text-muted mb-0">
+                  <a href="mailto:contato@microbook.com.br" class="text-muted text-decoration-none">contato@microbook.com.br</a>
+                </p>
+              </div>
+            </div>
+
+            <!-- Redes sociais -->
+            <div class="social-links mt-4 d-flex gap-3">
+              <a href="#" aria-label="Instagram" class="social-btn"><i class="bi bi-instagram"></i></a>
+              <a href="#" aria-label="Facebook" class="social-btn"><i class="bi bi-facebook"></i></a>
+              <a href="https://wa.me/5500000000000" aria-label="WhatsApp" target="_blank" rel="noopener" class="social-btn whatsapp"><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulário -->
+        <div class="col-lg-7">
+          <form id="contactForm" class="contact-form p-4 p-md-5" novalidate>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="nome" class="form-label fw-600">Nome <span class="text-accent">*</span></label>
+                <input type="text" class="form-control form-control-lg custom-input" id="nome"
+                       placeholder="Seu nome completo" required />
+                <div class="invalid-feedback">Por favor, informe seu nome.</div>
+              </div>
+              <div class="col-sm-6">
+                <label for="email" class="form-label fw-600">E-mail <span class="text-accent">*</span></label>
+                <input type="email" class="form-control form-control-lg custom-input" id="email"
+                       placeholder="seu@email.com" required />
+                <div class="invalid-feedback">Por favor, informe um e-mail válido.</div>
+              </div>
+              <div class="col-sm-6">
+                <label for="telefone" class="form-label fw-600">Telefone</label>
+                <input type="tel" class="form-control form-control-lg custom-input" id="telefone"
+                       placeholder="(00) 00000-0000" />
+              </div>
+              <div class="col-sm-6">
+                <label for="servico" class="form-label fw-600">Serviço</label>
+                <select class="form-select form-select-lg custom-input" id="servico">
+                  <option value="">Selecione um serviço</option>
+                  <option>Manutenção de Notebook</option>
+                  <option>Conserto de Desktop</option>
+                  <option>Diagnóstico Gratuito</option>
+                  <option>Formatação e Backup</option>
+                  <option>Upgrade de Hardware</option>
+                  <option>Redes e Conectividade</option>
+                  <option>Outro</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="mensagem" class="form-label fw-600">Mensagem <span class="text-accent">*</span></label>
+                <textarea class="form-control custom-input" id="mensagem" rows="5"
+                          placeholder="Descreva o problema do seu equipamento..." required></textarea>
+                <div class="invalid-feedback">Por favor, escreva sua mensagem.</div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary-custom btn-lg w-100">
+                  <i class="bi bi-send-fill me-2"></i>Enviar Mensagem
+                </button>
+              </div>
+            </div>
+          </form>
+          <!-- Alerta de sucesso -->
+          <div id="formSuccess" class="alert-success-custom mt-3 d-none">
+            <i class="bi bi-check-circle-fill me-2"></i>
+            Mensagem enviada com sucesso! Entraremos em contato em breve.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       CTA BANNER
+  ========================================= -->
+  <section class="cta-section py-6">
+    <div class="container text-center">
+      <h2 class="display-6 fw-800 text-white mb-3">Precisa de ajuda agora?</h2>
+      <p class="lead text-white-75 mb-4">Fale com a gente pelo WhatsApp e receba atendimento imediato.</p>
+      <a href="https://wa.me/5500000000000" target="_blank" rel="noopener"
+         class="btn btn-light btn-lg px-5 fw-700">
+        <i class="bi bi-whatsapp me-2 text-success"></i>Chamar no WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- =========================================
+       FOOTER
+  ========================================= -->
+  <footer class="footer py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <a class="navbar-brand d-flex align-items-center gap-2 mb-3" href="#inicio">
+            <span class="brand-icon"><i class="bi bi-cpu-fill"></i></span>
+            <span class="brand-text text-white">Micro<span class="brand-accent">Book</span></span>
+          </a>
+          <p class="text-white-50 small">
+            Especialistas em conserto de computadores e notebooks. Diagnóstico gratuito, peças originais e garantia em todos os serviços.
+          </p>
+        </div>
+        <div class="col-6 col-md-2 offset-md-1">
+          <h6 class="text-white fw-700 mb-3">Navegação</h6>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2">
+          <h6 class="text-white fw-700 mb-3">Serviços</h6>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#servicos">Notebooks</a></li>
+            <li><a href="#servicos">Desktops</a></li>
+            <li><a href="#servicos">Formatação</a></li>
+            <li><a href="#servicos">Upgrade</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6 class="text-white fw-700 mb-3">Contato</h6>
+          <ul class="list-unstyled footer-links">
+            <li><i class="bi bi-telephone me-2"></i>(00) 0000-0000</li>
+            <li><i class="bi bi-whatsapp me-2"></i>(00) 00000-0000</li>
+            <li><i class="bi bi-envelope me-2"></i>contato@microbook.com.br</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer-divider my-4" />
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start">
+          <small class="text-white-50">&copy; 2026 Microbook. Todos os direitos reservados.</small>
+        </div>
+        <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+          <div class="d-flex justify-content-center justify-content-md-end gap-3">
+            <a href="#" class="social-btn-sm"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-btn-sm"><i class="bi bi-facebook"></i></a>
+            <a href="https://wa.me/5500000000000" target="_blank" rel="noopener" class="social-btn-sm"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a href="https://wa.me/5500000000000" target="_blank" rel="noopener"
+     class="whatsapp-float" aria-label="WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
