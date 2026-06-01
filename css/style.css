@@ -573,6 +573,56 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font); }
   50% { box-shadow: 0 4px 32px rgba(37,211,102,0.75); }
 }
 
+/* --- WhatsApp CTA Card ---------------------------- */
+.whatsapp-cta-card {
+  background: #fff;
+  border: 2px solid rgba(37, 211, 102, 0.25);
+  border-radius: 20px;
+  box-shadow: 0 8px 40px rgba(37, 211, 102, 0.12);
+}
+
+.wpp-icon-big {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px; height: 72px;
+  background: #e8f5e9;
+  color: #25d366;
+  border-radius: 50%;
+  font-size: 2.2rem;
+}
+
+.btn-wpp {
+  background: #25d366;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  transition: var(--transition);
+}
+
+.btn-wpp:hover {
+  background: #1da851;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(37, 211, 102, 0.4);
+}
+
+/* --- Contact Info Cards --------------------------- */
+.contact-info-card {
+  background: #fff;
+  border: 1px solid #e8ecf0;
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+  transition: var(--transition);
+}
+
+.contact-info-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+  box-shadow: var(--card-shadow-hover);
+}
+
 /* --- Responsive tweaks ---------------------------- */
 @media (max-width: 991.98px) {
   .hero-section { padding: 6rem 0 4rem; }

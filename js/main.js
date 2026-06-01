@@ -115,58 +115,6 @@
   targets.forEach((el) => observer.observe(el));
 })();
 
-/* --- Contact Form validation & submit ----------- */
-(function () {
-  const form = document.getElementById('contactForm');
-  const successMsg = document.getElementById('formSuccess');
-  if (!form) return;
-
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-
-    if (!form.checkValidity()) {
-      form.classList.add('was-validated');
-      return;
-    }
-
-    /* Simula envio (substitua por fetch real se necessário) */
-    const btn = form.querySelector('button[type="submit"]');
-    btn.disabled = true;
-    btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Enviando…';
-
-    setTimeout(() => {
-      form.reset();
-      form.classList.remove('was-validated');
-      btn.disabled = false;
-      btn.innerHTML = '<i class="bi bi-send-fill me-2"></i>Enviar Mensagem';
-
-      if (successMsg) {
-        successMsg.classList.remove('d-none');
-        setTimeout(() => successMsg.classList.add('d-none'), 5000);
-      }
-    }, 1400);
-  });
-})();
-
-/* --- Phone mask --------------------------------- */
-(function () {
-  const tel = document.getElementById('telefone');
-  if (!tel) return;
-
-  tel.addEventListener('input', () => {
-    let v = tel.value.replace(/\D/g, '').slice(0, 11);
-    if (v.length > 10) {
-      v = v.replace(/^(\d{2})(\d{5})(\d{4})$/, '($1) $2-$3');
-    } else if (v.length > 5) {
-      v = v.replace(/^(\d{2})(\d{4})(\d{0,4})$/, '($1) $2-$3');
-    } else if (v.length > 2) {
-      v = v.replace(/^(\d{2})(\d*)/, '($1) $2');
-    }
-    tel.value = v;
-  });
-})();
-
 /* --- Smooth scroll for anchor links ------------- */
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener('click', (e) => {
