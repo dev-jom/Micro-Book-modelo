@@ -5,14 +5,14 @@
 
 /* --- Variables ------------------------------------ */
 :root {
-  --accent: #f97316;
-  --accent-dark: #ea6a00;
-  --accent-light: #fff7ed;
-  --primary-dark: #0f172a;
-  --nav-bg: #0f172a;
+  --accent: #f5c518;
+  --accent-dark: #d4a700;
+  --accent-light: #fefce8;
+  --primary-dark: #111111;
+  --nav-bg: #111111;
   --section-bg: #f8f9fa;
   --card-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
-  --card-shadow-hover: 0 8px 40px rgba(249, 115, 22, 0.18);
+  --card-shadow-hover: 0 8px 40px rgba(245, 197, 24, 0.18);
   --border-radius: 14px;
   --transition: all 0.28s ease;
   --font: 'Inter', sans-serif;
@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font); }
   background: var(--accent);
   border-radius: 8px;
   font-size: 1.15rem;
-  color: #fff;
+  color: #111111;
 }
 
 .brand-text {
@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font); }
 
 .btn-accent {
   background: var(--accent);
-  color: #fff;
+  color: #111111;
   font-weight: 600;
   border-radius: 8px;
   border: none;
@@ -100,15 +100,15 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font); }
 
 .btn-accent:hover {
   background: var(--accent-dark);
-  color: #fff;
+  color: #111111;
   transform: translateY(-1px);
-  box-shadow: 0 4px 16px rgba(249,115,22,0.35);
+  box-shadow: 0 4px 16px rgba(245,197,24,0.35);
 }
 
 /* --- Hero ----------------------------------------- */
 .hero-section {
   min-height: 100vh;
-  background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 60%, #0f172a 100%);
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 60%, #0a0a0a 100%);
   position: relative;
   overflow: hidden;
   padding: 7rem 0 6rem;
@@ -117,16 +117,16 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font); }
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 70% 50%, rgba(249,115,22,0.12) 0%, transparent 65%);
+  background: radial-gradient(ellipse at 70% 50%, rgba(245,197,24,0.12) 0%, transparent 65%);
   pointer-events: none;
 }
 
 .badge-pill {
   display: inline-flex;
   align-items: center;
-  background: rgba(249,115,22,0.15);
+  background: rgba(245,197,24,0.15);
   color: var(--accent);
-  border: 1px solid rgba(249,115,22,0.3);
+  border: 1px solid rgba(245,197,24,0.3);
   padding: 0.4rem 1rem;
   border-radius: 50px;
   font-size: 0.85rem;
@@ -139,12 +139,12 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font); }
   justify-content: center;
   width: 320px; height: 320px;
   background: rgba(255,255,255,0.04);
-  border: 2px solid rgba(249,115,22,0.2);
+  border: 2px solid rgba(245,197,24,0.2);
   border-radius: 50%;
   font-size: 9rem;
   color: var(--accent);
   animation: float 4s ease-in-out infinite;
-  box-shadow: 0 0 80px rgba(249,115,22,0.12);
+  box-shadow: 0 0 80px rgba(245,197,24,0.12);
 }
 
 @keyframes float {
@@ -228,7 +228,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font); }
 }
 
 .service-card--featured {
-  background: linear-gradient(135deg, var(--primary-dark) 0%, #1e3a5f 100%);
+  background: linear-gradient(135deg, #111111 0%, #1a1a1a 100%);
   border-color: transparent;
 }
 
@@ -250,12 +250,12 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font); }
 }
 
 .service-card--featured .service-icon {
-  background: rgba(249,115,22,0.2);
+  background: rgba(245,197,24,0.2);
 }
 
 .service-card:hover .service-icon {
   background: var(--accent);
-  color: #fff;
+  color: #111111;
 }
 
 .service-link {
@@ -278,23 +278,23 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font); }
   align-items: center;
   justify-content: center;
   width: 300px; height: 300px;
-  background: linear-gradient(135deg, var(--primary-dark), #1e3a5f);
+  background: linear-gradient(135deg, #111111, #1a1a1a);
   border-radius: 50%;
   font-size: 8rem;
   color: var(--accent);
-  box-shadow: 0 20px 60px rgba(15,23,42,0.3);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
 }
 
 .about-badge {
   position: absolute;
   bottom: 10px; right: -10px;
   background: var(--accent);
-  color: #fff;
+  color: #111111;
   font-size: 0.8rem;
   font-weight: 700;
   padding: 0.5rem 1rem;
   border-radius: 50px;
-  box-shadow: 0 4px 16px rgba(249,115,22,0.4);
+  box-shadow: 0 4px 16px rgba(245,197,24,0.4);
 }
 
 .about-feature {
@@ -307,7 +307,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font); }
 
 .btn-primary-custom {
   background: linear-gradient(135deg, var(--accent), var(--accent-dark));
-  color: #fff;
+  color: #111111;
   font-weight: 700;
   border: none;
   border-radius: 10px;
@@ -315,9 +315,9 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font); }
 }
 
 .btn-primary-custom:hover {
-  color: #fff;
+  color: #111111;
   transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(249,115,22,0.4);
+  box-shadow: 0 6px 24px rgba(245,197,24,0.4);
 }
 
 /* --- Process Cards -------------------------------- */
@@ -342,14 +342,14 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font); }
   transform: translateX(-50%);
   width: 32px; height: 32px;
   background: var(--accent);
-  color: #fff;
+  color: #111111;
   font-weight: 800;
   font-size: 0.9rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 12px rgba(249,115,22,0.35);
+  box-shadow: 0 4px 12px rgba(245,197,24,0.35);
 }
 
 .process-icon {
@@ -386,7 +386,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font); }
 .author-avatar {
   width: 46px; height: 46px;
   background: linear-gradient(135deg, var(--accent), var(--accent-dark));
-  color: #fff;
+  color: #111111;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -411,7 +411,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font); }
   transition: var(--transition);
 }
 
-.carousel-arrow:hover { background: var(--accent); color: #fff; }
+.carousel-arrow:hover { background: var(--accent); color: #111111; }
 
 .indicator {
   width: 10px; height: 10px;
@@ -448,10 +448,10 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font); }
   font-size: 1.1rem;
   text-decoration: none;
   transition: var(--transition);
-  border: 1px solid rgba(249,115,22,0.2);
+  border: 1px solid rgba(245,197,24,0.2);
 }
 
-.social-btn:hover { background: var(--accent); color: #fff; transform: translateY(-2px); }
+.social-btn:hover { background: var(--accent); color: #111111; transform: translateY(-2px); }
 .social-btn.whatsapp { background: #e8f5e9; color: #25d366; border-color: rgba(37,211,102,0.2); }
 .social-btn.whatsapp:hover { background: #25d366; color: #fff; }
 
@@ -473,7 +473,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font); }
 
 .custom-input:focus {
   border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(249,115,22,0.12);
+  box-shadow: 0 0 0 3px rgba(245,197,24,0.12);
   background: #fff;
 }
 
@@ -490,7 +490,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font); }
 
 /* --- CTA Banner ----------------------------------- */
 .cta-section {
-  background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
   position: relative;
   overflow: hidden;
 }
@@ -500,13 +500,13 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font); }
   position: absolute;
   top: -50%; left: -20%;
   width: 60%; height: 200%;
-  background: radial-gradient(ellipse, rgba(249,115,22,0.15) 0%, transparent 70%);
+  background: radial-gradient(ellipse, rgba(245,197,24,0.15) 0%, transparent 70%);
   pointer-events: none;
 }
 
 /* --- Footer --------------------------------------- */
 .footer {
-  background: #090f1a;
+  background: #0a0a0a;
 }
 
 .footer-links {
@@ -539,7 +539,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font); }
   transition: var(--transition);
 }
 
-.social-btn-sm:hover { background: var(--accent); color: #fff; }
+.social-btn-sm:hover { background: var(--accent); color: #111111; }
 
 /* --- WhatsApp Float ------------------------------- */
 .whatsapp-float {
